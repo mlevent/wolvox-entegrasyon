@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>700</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Kategoriler</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">#Dialog{
+	background:#fff;
+}
+QWidget{
+	background:#fff;
+}
+QScrollArea{
+	border:0;
+	margin:0;
+	padding:0;
+}
+QComboBox {
+		background:#edf2f9;
+		border-radius:3px;
+		padding:5px 6px;
+}
+QLabel{
+	font-weight:bold;
+}</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QScrollArea" name="MatchScrollArea">
+     <property name="styleSheet">
+      <string notr="true"/>
+     </property>
+     <property name="lineWidth">
+      <number>1</number>
+     </property>
+     <property name="widgetResizable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="MatchScroll">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>532</width>
+        <height>682</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <item>
+        <layout class="QVBoxLayout" name="MatchWrapper">
+         <item>
+          <layout class="QFormLayout" name="MatchForm"/>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
